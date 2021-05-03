@@ -120,7 +120,7 @@ public:
     int y_begin, y_end;
     string filename;
 
-    Cell(int id, Bucket *bucket,int x_begin, int x_end, int y_begin, int y_end): x_begin(x_begin),x_end(x_end),y_begin(y_begin),y_end(x_end), filename(to_string(id)+".csv"), bucket(bucket){ }
+    Cell(int id, Bucket *bucket,int x_begin, int x_end, int y_begin, int y_end): x_begin(x_begin),x_end(x_end),y_begin(y_begin),y_end(y_end), filename(to_string(id)+".csv"), bucket(bucket){ }
     vector<DataPoint> getAll(){
         vector<DataPoint> all = bucket->getAll(), cur;
         for (int i = 0; i < all.size(); i++)
